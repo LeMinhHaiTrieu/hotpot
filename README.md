@@ -1,0 +1,2 @@
+# hotpot
+Clone Haidilao
