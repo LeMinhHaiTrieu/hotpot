@@ -1,32 +1,51 @@
+import { useEffect, useState } from 'react'
 import Image1 from '../../asset/images/hadilao1.png'
 import Image2 from '../../asset/images/hadilao2.png'
 import Image3 from '../../asset/images/hadilao3.png'
-function Slide3() {
+import {
+    BrandSection,
+    CircleContent,
+    CircleLine,
+    BoxMainContent,
+    ItemBrand
+} from './styled'
+
+function Slide3(props) {
+    const [isShowCircle, setShowCircle] = useState(true)
+    useEffect(() => {
+        if (props.activeSlide !== 2) setShowCircle(true)
+        const timer = setTimeout(() => {
+            if(props.activeSlide === 2) setShowCircle(false)
+        }, 2000);
+        return () => clearTimeout(timer);
+    }, [props.activeSlide]);
     return (
-        <section className="brand-content">
-            <div className="circle-content">
-                <span className="circle-line sp1"></span>
-                <span className="circle-line sp2"></span>
-                <span className="circle-line sp3"></span>
-            </div>
-            <div className="row box-content justify-center">
-                <div className="col col-4">
+        <BrandSection>
+            {props.activeSlide === 2 && isShowCircle &&
+                <CircleContent>
+                    <CircleLine className="sp1"></CircleLine>
+                    <CircleLine className="sp2"></CircleLine>
+                    <CircleLine className="sp3"></CircleLine>
+                </CircleContent>
+            }
+            <BoxMainContent>
+                <ItemBrand>
                     <a href="/">
                         <img src={Image1} alt="" />
                     </a>
-                </div>
-                <div className="col col-4">
+                </ItemBrand>
+                <ItemBrand>
                     <a href="/">
                         <img src={Image2} alt="" />
                     </a>
-                </div>
-                <div className="col col-4">
+                </ItemBrand>
+                <ItemBrand>
                     <a href="/">
                         <img src={Image3} alt="" />
                     </a>
-                </div>
-            </div>
-        </section>
+                </ItemBrand>
+            </BoxMainContent>
+        </BrandSection>
     );
   }
   
