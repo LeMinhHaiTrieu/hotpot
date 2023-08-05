@@ -7,11 +7,12 @@ import {
     CircleContent,
     CircleLine,
     BoxMainContent,
-    ItemBrand
+    ItemBrand,
+    FeatureName
 } from './styled'
 
 function Slide3(props) {
-    const [isShowCircle, setShowCircle] = useState(true)
+    const [isShowCircle, setShowCircle] = useState(true);
     useEffect(() => {
         if (props.activeSlide !== 2) setShowCircle(true)
         const timer = setTimeout(() => {
@@ -28,23 +29,28 @@ function Slide3(props) {
                     <CircleLine className="sp3"></CircleLine>
                 </CircleContent>
             }
-            <BoxMainContent>
-                <ItemBrand>
-                    <a href="/">
-                        <img src={Image1} alt="" />
-                    </a>
-                </ItemBrand>
-                <ItemBrand>
-                    <a href="/">
-                        <img src={Image2} alt="" />
-                    </a>
-                </ItemBrand>
-                <ItemBrand>
-                    <a href="/">
-                        <img src={Image3} alt="" />
-                    </a>
-                </ItemBrand>
-            </BoxMainContent>
+            {props.activeSlide === 2 && 
+                <BoxMainContent>
+                    <ItemBrand>
+                        <a href="/">
+                            <img src={Image1} alt="" />
+                        </a>
+                        <FeatureName>Brand</FeatureName>
+                    </ItemBrand>
+                    <ItemBrand>
+                        <a href="/">
+                            <img src={Image2} alt="" />
+                        </a>
+                        <FeatureName>Cuisine</FeatureName>
+                    </ItemBrand>
+                    <ItemBrand>
+                        <a href="/">
+                            <img src={Image3} alt="" />
+                        </a>
+                        <FeatureName>Membership</FeatureName>
+                    </ItemBrand>
+                </BoxMainContent>
+            }
         </BrandSection>
     );
   }

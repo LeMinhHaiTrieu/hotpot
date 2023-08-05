@@ -86,15 +86,52 @@ const BoxMainContent = styled.div`
     z-index: 20;
 `;
 
+const ItemBrandKeyframes = keyframes`
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+`;
+
 const ItemBrand = styled.div`
     padding: 20px;
     width: 33.3333%;
-`
+    animation: ${ItemBrandKeyframes} 1s ease-in .3s 1 normal both;
+    img {
+        filter: grayscale(40%);
+        transition: 0.3s;
+        &:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+    }
+`;
+
+const FeatureName = styled.div`
+    margin-top: 50px;
+    color: rgb(136, 136, 136);
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    &:before, &:after {
+        content: '';
+        width: 40px;
+        height: 2px;
+        display: block;
+        background: rgb(136, 136, 136);
+        transform: translateY(15px);
+    }
+`;
 
 export {
     BrandSection,
     CircleContent,
     CircleLine,
     BoxMainContent,
-    ItemBrand
+    ItemBrand,
+    FeatureName
 };

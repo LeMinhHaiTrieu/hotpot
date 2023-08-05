@@ -13,7 +13,7 @@ const ImgMenu1 = styled.div`
     z-index: 20;
     text-align: center;
     width: 85%;
-    top: 3%;
+    top: 11%;
     img {
         max-width: 100%;
     }
@@ -23,7 +23,7 @@ const ImgMenu2 = styled.div`
     position: absolute;
     z-index: 15;
     text-align: center;
-    top: 25%;
+    top: 30%;
     width: 32%;
 `;
 
@@ -33,7 +33,7 @@ const BannerText = styled.div`
     position: absolute;
     z-index: 14;
     width: 34%;
-    bottom: 10%;
+    bottom: 2%;
     img {
         max-width: 100%;
     }
