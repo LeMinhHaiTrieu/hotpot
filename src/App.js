@@ -4,13 +4,13 @@ import { Mousewheel, Pagination } from 'swiper/modules';
 import Slide1 from './components/slide1';
 import Slide2 from './components/slide2';
 import Slide3 from './components/slide3';
+import Footer from './components/Footer';
 import { useState, useEffect } from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TopNav from './components/TopNav';
 import ArrowDown from './asset/images/arrow-down.png';
 import { styled, keyframes } from 'styled-components';
-import { useRef } from 'react'
 
 const CircleDownAnimation = keyframes`
   0% {
@@ -63,9 +63,9 @@ function App() {
       <TopNav />
       <Swiper
         direction={'vertical'}
-        slidesPerView={1}
+        slidesPerView={'auto'}
         spaceBetween={30}
-        mousewheel={false}
+        mousewheel={true}
         pagination={{
           clickable: true,
         }}
@@ -76,7 +76,7 @@ function App() {
         <SwiperSlide><Slide1 activeSlide={activeSlide} /></SwiperSlide>
         <SwiperSlide><Slide2 activeSlide={activeSlide} /></SwiperSlide>
         <SwiperSlide><Slide3 activeSlide={activeSlide} /></SwiperSlide>
-        <SwiperSlide className='test-slide'>Footer</SwiperSlide>
+        <SwiperSlide className='footer-slide'><Footer /></SwiperSlide>
       </Swiper>
       <CircleDownSlide>
         <img src={ArrowDown} alt="" />

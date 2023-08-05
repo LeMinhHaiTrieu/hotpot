@@ -28,7 +28,7 @@ const UlMenu = styled.ul`
 `;
 
 const LiMenu = styled.li`
-    padding: 0 30px;
+    padding: 0 15px;
     * {
         font-size: 18px;
     }
