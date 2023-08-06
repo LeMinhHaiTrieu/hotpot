@@ -5,14 +5,15 @@ import { styled, keyframes } from 'styled-components';
 import { Mousewheel, Pagination } from 'swiper/modules';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Slide1 from './components/slide1';
-import Slide2 from './components/slide2';
-import Slide3 from './components/slide3';
+import Slide1 from './components/Slide1';
+import Slide2 from './components/Slide2';
+import Slide3 from './components/Slide3';
 import Footer from './components/Footer';
 import TopNav from './components/TopNav';
 import MTopNav from './components/MTopNav';
 import MSlide2 from './components/MSlide2';
 import MSlide3 from './components/MSlide3';
+import MFooter from './components/MFooter';
 import ArrowDown from './asset/images/arrow-down.png';
 
 const CircleDownAnimation = keyframes`
@@ -113,6 +114,7 @@ function App() {
           <MTopNav />
           <MSlide2 />
           <MSlide3 />
+          <MFooter />
         </>
       }
     </div>
