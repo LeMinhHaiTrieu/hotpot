@@ -47,19 +47,10 @@ const BoxCountry = styled.div`
     }
 `;
 
-const WrapLogo = styled.div`
-    padding: 5px 40px;
-    img {
-        width: 100px;
-    }
-`;
-
-
 export {
     WrapperTopNav,
     ContentTopNav,
     UlMenu,
     LiMenu,
-    BoxCountry,
-    WrapLogo
+    BoxCountry
 }

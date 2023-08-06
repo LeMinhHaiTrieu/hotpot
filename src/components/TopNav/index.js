@@ -6,18 +6,19 @@ import {
     ContentTopNav,
     UlMenu,
     LiMenu,
-    BoxCountry
+    BoxCountry,
+    WrapLogo
 } from './styled'
-import logo from '../../asset/svg/logo.svg'
+import logo from '../../asset/images/fulllogo_transparent.png'
 import global from '../../asset/images/global.png'
 
 export default function TopNav() {
     return (
         <WrapperTopNav>
             <ContentTopNav>
-                <div className=''>
+                <WrapLogo>
                     <img src={logo} alt="logo.svg" />
-                </div>
+                </WrapLogo>
 
                 <UlMenu>
                     <LiMenu>
