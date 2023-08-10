@@ -9,6 +9,16 @@ const WrapperTopNav = styled.div`
     background-color: #fff;
     box-shadow: 0 0 2px #999;
     z-index: 999;
+    li.szh-menu__item {
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #666;
+        }
+        &:hover a {
+            color: ${MainColor1}
+        }
+    }
 `;
 
 const ContentTopNav = styled.div`
