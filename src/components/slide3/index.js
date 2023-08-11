@@ -29,7 +29,7 @@ function Slide3(props) {
                     <CircleLine className="sp3"></CircleLine>
                 </CircleContent>
             }
-            {props.activeSlide === 2 && 
+            {props.activeSlide === 2 &&
                 <BoxMainContent>
                     <ItemBrand>
                         <a href="/">

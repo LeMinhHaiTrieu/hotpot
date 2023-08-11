@@ -16,7 +16,6 @@ const ContentTopNav = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 15px;
-    max-width: 2000px;
     margin: auto;
 `;
 

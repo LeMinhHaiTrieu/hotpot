@@ -25,8 +25,6 @@ const ContentTopNav = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px 0 15px;
-    max-width: 2000px;
     margin: auto;
 `;
 
@@ -58,7 +56,7 @@ const BoxCountry = styled.div`
 `;
 
 const WrapLogo = styled.div`
-    padding: 5px 40px;
+    padding: 10px 0;
     img {
         width: 100px;
     }

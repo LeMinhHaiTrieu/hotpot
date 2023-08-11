@@ -7,8 +7,6 @@ const WrapFooter = styled.section`
 `;
 
 const MainFooter = styled.div`
-    max-width: 1200px;
-    margin: auto;
     display: flex;
 `;
 

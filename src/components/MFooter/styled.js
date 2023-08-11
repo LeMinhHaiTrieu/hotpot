@@ -6,11 +6,6 @@ const WrapBlack = styled.div`
     overflow: hidden;
 `;
 
-const MainFooter = styled.div`
-    max-width: 1200px;
-    margin: auto;
-`;
-
 const ColFooter = styled.div`
     max-width: 100%;
     padding: 0 15px;
@@ -80,7 +75,6 @@ const BlockTerms = styled.div`
 
 export {
     WrapBlack,
-    MainFooter,
     ColFooter,
     Title,
     List,
