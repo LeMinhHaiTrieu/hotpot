@@ -51,7 +51,7 @@ const BoxCountry = styled.div`
     span {
         padding-left: 10px;
         color: ${MainColor1};
-        font-weight: 600;
+        font-weight: 500;
     }
 `;
 

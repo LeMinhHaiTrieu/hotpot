@@ -51,11 +51,11 @@ const ItemIntro = styled.div`
 const Title = styled.h3`
     font-size: 28px;
     color: #666;
-    font-weight: 700;
+    font-weight: 600;
 `;
 
 const Description = styled.p`
-    font-size: 16px;
+    font-size: 18px;
     line-height: 32px;
     color: #888;
     margin-top: 1em;

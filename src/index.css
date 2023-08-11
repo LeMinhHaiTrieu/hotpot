@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: Ysabeau;
+  src: url('asset/fonts/Ysabeau-Regular.ttf');
+}
+
+@font-face {
+  font-family: Ysabeau;
+  src: url('asset/fonts/Ysabeau-Bold.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  src: url('asset/fonts/Ysabeau-SemiBold.ttf');
+  font-weight: 600;
+}
+
+body * {
+  font-family: Ysabeau;
+  font-size: 18px;
+}
