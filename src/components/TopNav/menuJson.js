@@ -1,312 +1,302 @@
-const Menuss = [
-    {
-        title: "About Haidilao",
-        link: "/",
-    },
-    {
-        title: "Haidilao Cuisine",
-        link: "/",
+const DataMenu = { 
+    "sub-base": {
+        title: "Sub Base",
         submenu: [
             {
-                title: "Sub Base",
-                link: "/",
-                submenu: [
-                    {
-                        title: "Beef `Pho` Broth",
-                        link: "/",
-                    },
-                    {
-                        title: "Healthy Herb Marrow Broth",
-                        link: "/",
-                    },
-                    {
-                        title: "Szechuan Spicy Marrow Broth",
-                        link: "/",
-                    },
-                    {
-                        title: "Thai Tomyum",
-                        link: "/",
-                    },
-                    {
-                        title: "Mushroom Broth",
-                        link: "/",
-                    },
-                ]
+                title: "Beef `Pho` Broth",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
             },
             {
-                title: "BBQ",
-                link: "/",
-                submenu: [
-                    {
-                        title: "Beef Bulgogi",
-                        link: "/",
-                    },
-                    {
-                        title: "Steak",
-                        link: "/",
-                    },
-                    {
-                        title: "La Beef Short Ribs",
-                        link: "/",
-                    },
-                    {
-                        title: "Chicken Bulgogi",
-                        link: "/",
-                    },
-                    {
-                        title: "Spicy Chicken Bulgogi",
-                        link: "/",
-                    },
-                    {
-                        title: "Spicy Pork Bulgogi",
-                        link: "/",
-                    },
-                    {
-                        title: "Pork Belly",
-                        link: "/",
-                    },
-                    {
-                        title: "Spicy Calamary",
-                        link: "/",
-                    },
-                    {
-                        title: "Onion",
-                        link: "/",
-                    },
-                    {
-                        title: "Green Lettuce",
-                        link: "/",
-                    },
-                    {
-                        title: "Premium Pork Jowl",
-                        link: "/",
-                    },
-                ]
+                title: "Healthy Herb Marrow Broth",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
             },
             {
-                title: "Side Dish",
-                link: "/",
-                submenu: [
-                    {
-                        title: "Fried Rice",
-                        link: "/",
-                    },
-                    {
-                        title: "Chicken Wings",
-                        link: "/",
-                    },
-                    {
-                        title: "Fried Buns",
-                        link: "/",
-                    },
-                ]
+                title: "Szechuan Spicy Marrow Broth",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
             },
             {
-                title: "Meat",
-                link: "/",
-                submenu: [
-                    {
-                        title: "Sliced Beef Belly",
-                        link: "/",
-                    },
-                    {
-                        title: "Sliced Prime Brisket",
-                        link: "/",
-                    },
-                    {
-                        title: "Sliced Chicken",
-                        link: "/",
-                    },
-                    {
-                        title: "Sliced Lamb",
-                        link: "/",
-                    },
-                    {
-                        title: "Sliced Pork",
-                        link: "/",
-                    },
-                    {
-                        title: "Sliced Pork Belly",
-                        link: "/",
-                    },
-                ]
+                title: "Thai Tomyum",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
             },
             {
-                title: "Seafood",
-                link: "/",
-                submenu: [
-                    {
-                        title: "Fish Fillet",
-                        link: "/",
-                    },
-                    {
-                        title: "Clam",
-                        link: "/",
-                    },
-                    {
-                        title: "Soup",
-                        link: "/",
-                    },
-                    {
-                        title: "Jumpo Shrimp",
-                        link: "/",
-                    },
-                    {
-                        title: "Mussels",
-                        link: "/",
-                    },
-                ]
-            },
-            {
-                title: "Meatball",
-                link: "/",
-                submenu: [
-                    {
-                        title: "Beef Meatball",
-                        link: "/",
-                    },
-                    {
-                        title: "Fish Cakes",
-                        link: "/",
-                    },
-                    {
-                        title: "Fish Meatball",
-                        link: "/",
-                    },
-                    {
-                        title: "Fish Roe Ball",
-                        link: "/",
-                    },
-                    {
-                        title: "Lobster Ball",
-                        link: "/",
-                    },
-                ]
-            },
-            {
-                title: "Tofu",
-                link: "/",
-                submenu: [
-                    {
-                        title: "Tofu",
-                        link: "/",
-                    },
-                    {
-                        title: "Fried Tofu",
-                        link: "/",
-                    },
-                    {
-                        title: "Bean Curd Stick",
-                        link: "/",
-                    },
-                ]
-            },
-            {
-                title: "Vegetable",
-                link: "/",
-                submenu: [
-                    {
-                        title: "Green Lettuce",
-                        link: "/",
-                    },
-                    {
-                        title: "Onion",
-                        link: "/",
-                    },
-                    {
-                        title: "Sweet Potatoes",
-                        link: "/",
-                    },
-                    {
-                        title: "WaterCress",
-                        link: "/",
-                    },
-                    {
-                        title: "Bokchoy",
-                        link: "/",
-                    },
-                    {
-                        title: "Broccoli",
-                        link: "/",
-                    },
-                    {
-                        title: "Lotus Root",
-                        link: "/",
-                    },
-                    {
-                        title: "Pumpkins",
-                        link: "/",
-                    },
-                    {
-                        title: "Freshcorns",
-                        link: "/",
-                    },
-                    {
-                        title: "Enoki Mushroom",
-                        link: "/",
-                    },
-                    {
-                        title: "White Mushroom",
-                        link: "/",
-                    },
-                    {
-                        title: "King Oyster Mushroom",
-                        link: "/",
-                    },
-                ]
-            },
-            {
-                title: "Noodle",
-                link: "/",
-                submenu: [
-                    {
-                        title: "Dumplings",
-                        link: "/",
-                    },
-                    {
-                        title: "Vermicelli",
-                        link: "/",
-                    },
-                    {
-                        title: "Udon",
-                        link: "/",
-                    },
-                    {
-                        title: "Instant Noodle",
-                        link: "/",
-                    },
-                    {
-                        title: "Glass Noodle",
-                        link: "/",
-                    },
-                    {
-                        title: "Fresh Thick Noodle",
-                        link: "/",
-                    },
-                    {
-                        title: "Rice",
-                        link: "/",
-                    },
-                ]
-            },
-            {
-                title: "Delicacy",
-                link: "/",
-                submenu: [
-                    {
-                        title: "Quail Eggs",
-                        link: "/",
-                    },
-                    {
-                        title: "Beef Tripe",
-                        link: "/",
-                    },
-                    {
-                        title: "Chinese Luncheon Pork",
-                        link: "/",
-                    },
-                ]
+                title: "Mushroom Broth",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
             },
         ]
-    }
-];
+    },
+    'bbq': {
+        title: "BBQ",
+        submenu: [
+            {
+                title: "Beef Bulgogi",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Steak",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "La Beef Short Ribs",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Chicken Bulgogi",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Spicy Chicken Bulgogi",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Spicy Pork Bulgogi",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Pork Belly",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Spicy Calamary",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Onion",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Green Lettuce",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Premium Pork Jowl",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+        ]
+    },
+    'side-dish': {
+        title: "Side Dish",
+        description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
+        submenu: [
+            {
+                title: "Fried Rice",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Chicken Wings",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Fried Buns",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+        ]
+    },
+    'meat': {
+        title: "Meat",
+        description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
+        submenu: [
+            {
+                title: "Sliced Beef Belly",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Sliced Prime Brisket",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Sliced Chicken",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Sliced Lamb",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Sliced Pork",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Sliced Pork Belly",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+        ]
+    },
+    'seafood': {
+        title: "Seafood",
+        description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
+        submenu: [
+            {
+                title: "Fish Fillet",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Clam",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Soup",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Jumpo Shrimp",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Mussels",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+        ]
+    },
+    'meatball': {
+        title: "Meatball",
+        description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
+        submenu: [
+            {
+                title: "Beef Meatball",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Fish Cakes",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Fish Meatball",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Fish Roe Ball",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Lobster Ball",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+        ]
+    },
+    'tofu': {
+        title: "Tofu",
+        description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
+        submenu: [
+            {
+                title: "Tofu",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Fried Tofu",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Bean Curd Stick",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+        ]
+    },
+    'vegetable': {
+        title: "Vegetable",
+        description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
+        submenu: [
+            {
+                title: "Green Lettuce",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Onion",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Sweet Potatoes",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "WaterCress",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Bokchoy",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Broccoli",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Lotus Root",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Pumpkins",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Freshcorns",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Enoki Mushroom",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "White Mushroom",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "King Oyster Mushroom",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+        ]
+    },
+    'noodle': {
+        title: "Noodle",
+        description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
+        submenu: [
+            {
+                title: "Dumplings",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Vermicelli",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Udon",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Instant Noodle",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Glass Noodle",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Fresh Thick Noodle",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Rice",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+        ]
+    },
+    'delicacy': {
+        title: "Delicacy",
+        description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
+        submenu: [
+            {
+                title: "Quail Eggs",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Beef Tripe",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+            {
+                title: "Chinese Luncheon Pork",
+                description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!"
+            },
+        ]
+    },
+};
+
+export { DataMenu }

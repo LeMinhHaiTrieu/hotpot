@@ -30,34 +30,34 @@ export default function TopNav() {
                         <LiMenu>
                             <HoverMenuWithTransition title="Cuisine">
                                 <MenuItem>
-                                    <Link to="/">Sub Base</Link>
+                                    <Link to="/cuisine/sub-base">Sub Base</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Link to="/">BBQ</Link>
+                                    <Link to="/cuisine/bbq">BBQ</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Link to="/">Side Dish</Link>
+                                    <Link to="/cuisine/side-dish">Side Dish</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Link to="/">Meat</Link>
+                                    <Link to="/cuisine/meat">Meat</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Link to="/">Seafood</Link>
+                                    <Link to="/cuisine/seafood">Seafood</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Link to="/">Meatball</Link>
+                                    <Link to="/cuisine/meatball">Meatball</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Link to="/">Tofu</Link>
+                                    <Link to="/cuisine/tofu">Tofu</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Link to="/">Vegetable</Link>
+                                    <Link to="/cuisine/vegetable">Vegetable</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Link to="/">Noodle</Link>
+                                    <Link to="/cuisine/noodle">Noodle</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Link to="/">Delicacy</Link>
+                                    <Link to="/cuisine/delicacy">Delicacy</Link>
                                 </MenuItem>
                             </HoverMenuWithTransition>
                         </LiMenu>

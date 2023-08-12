@@ -68,8 +68,8 @@ export default function PageAbout() {
             </Banner>
             <ContentMain>
                 <Container>
-                    {content.map(item =>
-                        <ItemIntroTemplate {...item} key={item.title} />
+                    {content.map((item, index) =>
+                        <ItemIntroTemplate {...item} key={index} />
                     )}
                 </Container>
             </ContentMain>
