@@ -3,13 +3,13 @@ import TopNav from '../../components/TopNav'
 import {
     Banner,
     BlockImage,
-    Title,
     Description,
     ContentMain,
     ItemIntro,
     ImgTopic,
     ImgCircle,
 } from './styled'
+import TitleParagraph from '../../components/TitleParagraph';
 import CircleOpacity from '../../asset/images/circle-opacity.png'
 import FooterNew from '../../components/FooterNew'
 
@@ -51,7 +51,7 @@ const ItemIntroTemplate = (props) => {
                     </BlockImage>
                 </Col>
                 <Col lg="6" className='mt-4'>
-                    <Title>{title}</Title>
+                    <TitleParagraph>{title}</TitleParagraph>
                     <Description>{description}</Description>
                 </Col>
             </Row>

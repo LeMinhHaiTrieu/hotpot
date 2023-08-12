@@ -8,7 +8,9 @@ const Banner = styled.section`
 `;
 
 const ContentMain = styled.section`
-    margin: 100px 0;
+    @media (min-width: 992px) {
+        margin: 100px 0;
+    }
     overflow: hidden;
 `;
 
@@ -51,11 +53,6 @@ const ItemIntro = styled.div`
     margin: 50px 0;
 `;
 
-const Title = styled.h3`
-    font-size: 28px;
-    color: #666;
-    font-weight: 600;
-`;
 
 const Description = styled.p`
     font-size: 18px;
@@ -69,7 +66,6 @@ export {
     BlockImage,
     ImgTopic,
     ImgCircle,
-    Title,
     Description,
     ContentMain,
     ItemIntro,
