@@ -64,7 +64,7 @@ export default function TopNav() {
                         <LiMenu>
                             <HoverMenuWithTransition title="Service Center">
                                 <MenuItem>
-                                    <Link to="/contact">Contact us</Link>
+                                    <Link to="/contact-us">Contact us</Link>
                                 </MenuItem>
                                 <MenuItem>
                                     <Link to="/">Make reservation</Link>
