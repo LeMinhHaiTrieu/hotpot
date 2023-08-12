@@ -9,6 +9,7 @@ const Banner = styled.section`
 
 const ContentMain = styled.section`
     margin: 100px 0;
+    overflow: hidden;
 `;
 
 const BlockImage = styled.div`
@@ -18,7 +19,9 @@ const BlockImage = styled.div`
 const ImgTopic = styled.div`
     position: relative;
     z-index: 20;
-    width: 97%;
+    @media (min-width: 992px) {
+        width: 97%;
+    }
     img {
         width: 100%;
         box-shadow: 4px 4px 27px 7px #fde8ea;

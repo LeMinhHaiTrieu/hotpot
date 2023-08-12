@@ -11,7 +11,7 @@ import {
     ImgCircle,
 } from './styled'
 import CircleOpacity from '../../asset/images/circle-opacity.png'
-import Footer from '../../components/Footer'
+import FooterNew from '../../components/FooterNew'
 
 const content = [
     {
@@ -73,7 +73,7 @@ export default function PageAbout() {
                     )}
                 </Container>
             </ContentMain>
-            <Footer />
+            <FooterNew />
         </div>
     )
 }

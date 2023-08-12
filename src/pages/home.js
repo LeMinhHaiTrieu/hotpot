@@ -13,6 +13,7 @@ import MTopNav from '../components/MTopNav';
 import MSlide2 from '../components/MSlide2';
 import MSlide3 from '../components/MSlide3';
 import MFooter from '../components/MFooter';
+import FooterNew from '../components/FooterNew';
 import ArrowDown from '../asset/images/arrow-down.png';
 
 const CircleDownAnimation = keyframes`
@@ -96,7 +97,7 @@ function App() {
             <SwiperSlide><Slide1 activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide><Slide2 activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide><Slide3 activeSlide={activeSlide} /></SwiperSlide>
-            <SwiperSlide className='footer-slide'><Footer /></SwiperSlide>
+            <SwiperSlide className='footer-slide'><FooterNew /></SwiperSlide>
           </Swiper>
           {activeSlide != 3 &&
             <CircleDownSlide onClick={nexToSlide}>
@@ -110,7 +111,7 @@ function App() {
           <MTopNav />
           <MSlide2 />
           <MSlide3 />
-          <MFooter />
+          <FooterNew />
         </>
       }
     </div>
