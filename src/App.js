@@ -6,7 +6,8 @@ import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contactUs';
 import Membership from './pages/membership';
-import Cuisine from './pages/cuisine'
+import Cuisine from './pages/cuisine';
+import Reservation from './pages/reservation'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/membership" element={<Membership />} />
+          <Route path="/reservation" element={<Reservation />} />
           <Route path="/cuisine" element={<Outlet />}>
             <Route path=':cuisineId' element={<Cuisine />} />
           </Route>

@@ -67,7 +67,7 @@ export default function TopNav() {
                                     <Link to="/contact-us">Contact us</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Link to="/">Make reservation</Link>
+                                    <Link to="/reservation">Make reservation</Link>
                                 </MenuItem>
                             </HoverMenuWithTransition>
                         </LiMenu>
