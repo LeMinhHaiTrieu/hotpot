@@ -15,6 +15,7 @@ import MSlide3 from '../components/MSlide3';
 import MFooter from '../components/MFooter';
 import FooterNew from '../components/FooterNew';
 import ArrowDown from '../asset/images/arrow-down.png';
+import Slide2New from '../components/Slide2New';
 
 const CircleDownAnimation = keyframes`
   0% {
@@ -95,7 +96,7 @@ function App() {
             }}
           >
             <SwiperSlide><Slide1 activeSlide={activeSlide} /></SwiperSlide>
-            <SwiperSlide><Slide2 activeSlide={activeSlide} /></SwiperSlide>
+            <SwiperSlide><Slide2New activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide><Slide3 activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide className='footer-slide'><FooterNew /></SwiperSlide>
           </Swiper>

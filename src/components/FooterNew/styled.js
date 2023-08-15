@@ -10,7 +10,7 @@ const MainFooter = styled.div`
     display: flex;
     color: #FFFFFF;
     .logo img {
-        width: 100px;
+        width: 80px;
     }
     .license img {
         width: 150px;

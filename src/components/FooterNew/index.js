@@ -17,12 +17,12 @@ function FooterNew() {
                                 <div className='logo flex-shrink-0'>
                                     <img src={Logo} alt="logo" />
                                 </div>
-                                <div className='px-lg-3 mt-lg-0 mt-3'>Vietnam's premier ticketing platform for events<br />Ticketbox Co. Ltd. © 2016</div>
+                                <div className='px-lg-3 mt-lg-0 mt-3 text-start'>Vietnam's premier ticketing platform for events<br />Ticketbox Co. Ltd. © 2016</div>
                             </div>
                         </Col>
                         <Col lg={7}>
                             <div className='d-lg-flex align-items-center mt-lg-0 mt-4'>
-                                <div>
+                                <div className='text-start'>
                                     Ticketbox Co., Ltd<br />
                                     Legal representative: Tran Ngoc Thai Son<br />
                                     Address: 3rd floor, Tower A, Viettel Building, 285 Cach Mang Thang Tam, Ward 12, District 10, HCMC.<br />

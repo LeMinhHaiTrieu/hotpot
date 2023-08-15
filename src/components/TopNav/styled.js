@@ -58,7 +58,7 @@ const BoxCountry = styled.div`
 const WrapLogo = styled.div`
     padding: 10px 0;
     img {
-        width: 100px;
+        width: 80px;
     }
 `;
 
