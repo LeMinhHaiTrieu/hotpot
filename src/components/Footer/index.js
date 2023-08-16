@@ -1,3 +1,4 @@
+import { Container } from 'react-bootstrap'
 import {
     WrapFooter,
     MainFooter,
@@ -8,25 +9,27 @@ import {
 } from './styled'
 import { ItemsFooter } from '../../constant'
 
-function Footer(props) {
+function Footer() {
     return (
         <WrapFooter>
-            <MainFooter>
-                {ItemsFooter.map((item, index) =>
-                    <ColFooter key={index}>
-                        <Title>
-                            <a href={item.link}>{item.title}</a>
-                        </Title>
-                        <List>
-                            {item.items.map((route, j) =>
-                                <ListItem key={j}>
-                                    <a href={route.link}>{route.title}</a>
-                                </ListItem>
-                            )}
-                        </List>
-                    </ColFooter>
-                )}
-            </MainFooter>
+            <Container>
+                <MainFooter>
+                    {ItemsFooter.map((item, index) =>
+                        <ColFooter key={index}>
+                            <Title>
+                                <a href={item.link}>{item.title}</a>
+                            </Title>
+                            <List>
+                                {item.items.map((route, j) =>
+                                    <ListItem key={j}>
+                                        <a href={route.link}>{route.title}</a>
+                                    </ListItem>
+                                )}
+                            </List>
+                        </ColFooter>
+                    )}
+                </MainFooter>
+            </Container>
         </WrapFooter>
     )
 }

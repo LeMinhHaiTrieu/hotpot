@@ -9,14 +9,22 @@ const WrapperTopNav = styled.div`
     background-color: #fff;
     box-shadow: 0 0 2px #999;
     z-index: 999;
+    li.szh-menu__item {
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #666;
+        }
+        &:hover a {
+            color: ${MainColor1}
+        }
+    }
 `;
 
 const ContentTopNav = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px 0 15px;
-    max-width: 2000px;
     margin: auto;
 `;
 
@@ -43,14 +51,14 @@ const BoxCountry = styled.div`
     span {
         padding-left: 10px;
         color: ${MainColor1};
-        font-weight: 600;
+        font-weight: 500;
     }
 `;
 
 const WrapLogo = styled.div`
-    padding: 5px 40px;
+    padding: 10px 0;
     img {
-        width: 100px;
+        width: 80px;
     }
 `;
 

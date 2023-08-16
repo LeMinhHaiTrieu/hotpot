@@ -16,7 +16,6 @@ const ContentTopNav = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 15px;
-    max-width: 2000px;
     margin: auto;
 `;
 
@@ -30,7 +29,7 @@ const UlMenu = styled.ul`
 const LiMenu = styled.li`
     padding: 0 15px;
     * {
-        font-size: 18px;
+        font-size: 16px;
     }
 `;
 
@@ -43,7 +42,7 @@ const BoxCountry = styled.div`
     span {
         padding-left: 10px;
         color: ${MainColor1};
-        font-weight: 600;
+        font-weight: 500;
     }
 `;
 

@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
+import { Container } from 'react-bootstrap'
 import {
     WrapBlack,
-    MainFooter,
     ColFooter,
     Title,
     List,
@@ -50,11 +50,11 @@ function MFooter() {
     return (
         <footer>
             <WrapBlack>
-                <MainFooter>
+                <Container>
                     {ItemsFooter.map((item, index) =>
                         <ItemCol {...item} key={index} />
                     )}
-                </MainFooter>
+                </Container>
             </WrapBlack>
             <BlockTerms>
                 <div><a href="#">Terms of Use</a></div>
