@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.355bede1.css",
-    "main.js": "/static/js/main.bd6eb3ab.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/menu.png": "/static/media/menu.d4068d4dad9f1263e397.png",
-    "static/media/hadilao3.png": "/static/media/hadilao3.70d52e2032b54514d458.png",
-    "static/media/hadilao2.png": "/static/media/hadilao2.fe66c98f8b722ead8c07.png",
-    "static/media/hadilao1.png": "/static/media/hadilao1.42be43cddeac2bd601cb.png",
-    "static/media/Ysabeau-SemiBold.ttf": "/static/media/Ysabeau-SemiBold.a0f7a73f67af11552f2a.ttf",
-    "static/media/Ysabeau-Bold.ttf": "/static/media/Ysabeau-Bold.3d3b09b074e565a11fda.ttf",
-    "static/media/Ysabeau-Regular.ttf": "/static/media/Ysabeau-Regular.8cc222123fe013998dd8.ttf",
-    "static/media/bg-contact.png": "/static/media/bg-contact.ef6994336c9770423dcb.png",
-    "static/media/fulllogo_transparent.png": "/static/media/fulllogo_transparent.97123a32d757accb2083.png",
-    "static/media/bg-block-radius.png": "/static/media/bg-block-radius.2c610196161cdb40376c.png",
-    "static/media/icon-instagram.png": "/static/media/icon-instagram.1fc652153ecbe28322d0.png",
-    "static/media/icon_order_online.svg": "/static/media/icon_order_online.1fa47aa1cb29069da59b50abb2877f29.svg",
-    "static/media/icon_follow_us.svg": "/static/media/icon_follow_us.f9eb44ee88e64dc9041237166616e99b.svg",
-    "index.html": "/index.html",
-    "main.355bede1.css.map": "/static/css/main.355bede1.css.map",
-    "main.bd6eb3ab.js.map": "/static/js/main.bd6eb3ab.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/hotpot/static/css/main.72577d49.css",
+    "main.js": "/hotpot/static/js/main.68d4b155.js",
+    "static/js/787.28cb0dcd.chunk.js": "/hotpot/static/js/787.28cb0dcd.chunk.js",
+    "static/media/menu.png": "/hotpot/static/media/menu.d4068d4dad9f1263e397.png",
+    "static/media/hadilao3.png": "/hotpot/static/media/hadilao3.70d52e2032b54514d458.png",
+    "static/media/hadilao2.png": "/hotpot/static/media/hadilao2.fe66c98f8b722ead8c07.png",
+    "static/media/hadilao1.png": "/hotpot/static/media/hadilao1.42be43cddeac2bd601cb.png",
+    "static/media/Ysabeau-SemiBold.ttf": "/hotpot/static/media/Ysabeau-SemiBold.a0f7a73f67af11552f2a.ttf",
+    "static/media/Ysabeau-Bold.ttf": "/hotpot/static/media/Ysabeau-Bold.3d3b09b074e565a11fda.ttf",
+    "static/media/Ysabeau-Regular.ttf": "/hotpot/static/media/Ysabeau-Regular.8cc222123fe013998dd8.ttf",
+    "static/media/bg-contact.png": "/hotpot/static/media/bg-contact.ef6994336c9770423dcb.png",
+    "static/media/fulllogo_transparent.png": "/hotpot/static/media/fulllogo_transparent.97123a32d757accb2083.png",
+    "static/media/bg-block-radius.png": "/hotpot/static/media/bg-block-radius.2c610196161cdb40376c.png",
+    "static/media/icon-instagram.png": "/hotpot/static/media/icon-instagram.1fc652153ecbe28322d0.png",
+    "static/media/icon_order_online.svg": "/hotpot/static/media/icon_order_online.1fa47aa1cb29069da59b50abb2877f29.svg",
+    "static/media/icon_follow_us.svg": "/hotpot/static/media/icon_follow_us.f9eb44ee88e64dc9041237166616e99b.svg",
+    "index.html": "/hotpot/index.html",
+    "main.72577d49.css.map": "/hotpot/static/css/main.72577d49.css.map",
+    "main.68d4b155.js.map": "/hotpot/static/js/main.68d4b155.js.map",
+    "787.28cb0dcd.chunk.js.map": "/hotpot/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.355bede1.css",
-    "static/js/main.bd6eb3ab.js"
+    "static/css/main.72577d49.css",
+    "static/js/main.68d4b155.js"
   ]
 }
