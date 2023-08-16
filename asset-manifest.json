@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/leminhhaitrieu.github.io/hotpot/static/css/main.84dd4ed4.css",
-    "main.js": "/leminhhaitrieu.github.io/hotpot/static/js/main.85a5e0ed.js",
-    "static/js/787.28cb0dcd.chunk.js": "/leminhhaitrieu.github.io/hotpot/static/js/787.28cb0dcd.chunk.js",
-    "static/media/menu.png": "/leminhhaitrieu.github.io/hotpot/static/media/menu.d4068d4dad9f1263e397.png",
-    "static/media/hadilao3.png": "/leminhhaitrieu.github.io/hotpot/static/media/hadilao3.70d52e2032b54514d458.png",
-    "static/media/hadilao2.png": "/leminhhaitrieu.github.io/hotpot/static/media/hadilao2.fe66c98f8b722ead8c07.png",
-    "static/media/hadilao1.png": "/leminhhaitrieu.github.io/hotpot/static/media/hadilao1.42be43cddeac2bd601cb.png",
-    "static/media/Ysabeau-SemiBold.ttf": "/leminhhaitrieu.github.io/hotpot/static/media/Ysabeau-SemiBold.a0f7a73f67af11552f2a.ttf",
-    "static/media/Ysabeau-Bold.ttf": "/leminhhaitrieu.github.io/hotpot/static/media/Ysabeau-Bold.3d3b09b074e565a11fda.ttf",
-    "static/media/Ysabeau-Regular.ttf": "/leminhhaitrieu.github.io/hotpot/static/media/Ysabeau-Regular.8cc222123fe013998dd8.ttf",
-    "static/media/bg-contact.png": "/leminhhaitrieu.github.io/hotpot/static/media/bg-contact.ef6994336c9770423dcb.png",
-    "static/media/fulllogo_transparent.png": "/leminhhaitrieu.github.io/hotpot/static/media/fulllogo_transparent.97123a32d757accb2083.png",
-    "static/media/bg-block-radius.png": "/leminhhaitrieu.github.io/hotpot/static/media/bg-block-radius.2c610196161cdb40376c.png",
-    "static/media/icon-instagram.png": "/leminhhaitrieu.github.io/hotpot/static/media/icon-instagram.1fc652153ecbe28322d0.png",
-    "static/media/icon_order_online.svg": "/leminhhaitrieu.github.io/hotpot/static/media/icon_order_online.1fa47aa1cb29069da59b50abb2877f29.svg",
-    "static/media/icon_follow_us.svg": "/leminhhaitrieu.github.io/hotpot/static/media/icon_follow_us.f9eb44ee88e64dc9041237166616e99b.svg",
-    "index.html": "/leminhhaitrieu.github.io/hotpot/index.html",
-    "main.84dd4ed4.css.map": "/leminhhaitrieu.github.io/hotpot/static/css/main.84dd4ed4.css.map",
-    "main.85a5e0ed.js.map": "/leminhhaitrieu.github.io/hotpot/static/js/main.85a5e0ed.js.map",
-    "787.28cb0dcd.chunk.js.map": "/leminhhaitrieu.github.io/hotpot/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/hotpot/static/css/main.72577d49.css",
+    "main.js": "/hotpot/static/js/main.68d4b155.js",
+    "static/js/787.28cb0dcd.chunk.js": "/hotpot/static/js/787.28cb0dcd.chunk.js",
+    "static/media/menu.png": "/hotpot/static/media/menu.d4068d4dad9f1263e397.png",
+    "static/media/hadilao3.png": "/hotpot/static/media/hadilao3.70d52e2032b54514d458.png",
+    "static/media/hadilao2.png": "/hotpot/static/media/hadilao2.fe66c98f8b722ead8c07.png",
+    "static/media/hadilao1.png": "/hotpot/static/media/hadilao1.42be43cddeac2bd601cb.png",
+    "static/media/Ysabeau-SemiBold.ttf": "/hotpot/static/media/Ysabeau-SemiBold.a0f7a73f67af11552f2a.ttf",
+    "static/media/Ysabeau-Bold.ttf": "/hotpot/static/media/Ysabeau-Bold.3d3b09b074e565a11fda.ttf",
+    "static/media/Ysabeau-Regular.ttf": "/hotpot/static/media/Ysabeau-Regular.8cc222123fe013998dd8.ttf",
+    "static/media/bg-contact.png": "/hotpot/static/media/bg-contact.ef6994336c9770423dcb.png",
+    "static/media/fulllogo_transparent.png": "/hotpot/static/media/fulllogo_transparent.97123a32d757accb2083.png",
+    "static/media/bg-block-radius.png": "/hotpot/static/media/bg-block-radius.2c610196161cdb40376c.png",
+    "static/media/icon-instagram.png": "/hotpot/static/media/icon-instagram.1fc652153ecbe28322d0.png",
+    "static/media/icon_order_online.svg": "/hotpot/static/media/icon_order_online.1fa47aa1cb29069da59b50abb2877f29.svg",
+    "static/media/icon_follow_us.svg": "/hotpot/static/media/icon_follow_us.f9eb44ee88e64dc9041237166616e99b.svg",
+    "index.html": "/hotpot/index.html",
+    "main.72577d49.css.map": "/hotpot/static/css/main.72577d49.css.map",
+    "main.68d4b155.js.map": "/hotpot/static/js/main.68d4b155.js.map",
+    "787.28cb0dcd.chunk.js.map": "/hotpot/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84dd4ed4.css",
-    "static/js/main.85a5e0ed.js"
+    "static/css/main.72577d49.css",
+    "static/js/main.68d4b155.js"
   ]
 }
