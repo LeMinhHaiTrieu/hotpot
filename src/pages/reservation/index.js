@@ -1,12 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useForm } from "react-hook-form"
 import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css";
-import TopNav from '../../components/TopNav'
-import FooterNew from '../../components/FooterNew'
 import {
-    Banner,
-    ContentMain,
+    Wrapper,
     BlockStarts,
     Address,
     BlockPerson,
@@ -14,6 +11,7 @@ import {
 } from './styled'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import ImageStart from '../../asset/images/stars.png'
+import TemplatePage from '../../components/TemplatePage';
 
 const numberOfPerson = [1, 2, 3, 4, 5, 6, "+7"];
 
@@ -60,14 +58,10 @@ export default function PageReservation() {
     };
 
     return (
-        <>
-            <TopNav />
-
-            <Banner>
-                <img src="https://cdn-global-website.superhi-cdn.com/website/image/0688568204954d4592b3703cc4e50daf-1920-490.jpg" alt="banner" />
-            </Banner>
-           
-            <ContentMain className='p-lg-4 p-3'>
+        <TemplatePage
+            imgBanner="https://cdn-global-website.superhi-cdn.com/website/image/0688568204954d4592b3703cc4e50daf-1920-490.jpg"
+        >
+            <Wrapper className='p-lg-4 p-3'>
                 <Container>
                     <Row>
                         <Col className='col-lg-4 col-12 border-right mt-lg-0 mt-4'>
@@ -194,9 +188,7 @@ export default function PageReservation() {
                         </Col>
                     </Row>
                 </Container>
-            </ContentMain>
-            
-            <FooterNew />
-        </>
+            </Wrapper>
+        </TemplatePage>
     )
 }

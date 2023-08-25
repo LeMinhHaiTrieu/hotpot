@@ -1,17 +1,14 @@
 import { Col, Row, Container } from 'react-bootstrap';
-import TopNav from '../../components/TopNav'
 import {
-    Banner,
     BlockImage,
     Description,
-    ContentMain,
     ItemIntro,
     ImgTopic,
     ImgCircle,
 } from './styled'
 import TitleParagraph from '../../components/TitleParagraph';
 import CircleOpacity from '../../asset/images/circle-opacity.png'
-import FooterNew from '../../components/FooterNew'
+import TemplatePage from '../../components/TemplatePage'
 
 const content = [
     {
@@ -61,19 +58,14 @@ const ItemIntroTemplate = (props) => {
 
 export default function PageAbout() {
     return (
-        <div>
-            <TopNav />
-            <Banner>
-                <img src="https://cdn-global-website.superhi-cdn.com/website/image/0688568204954d4592b3703cc4e50daf-1920-490.jpg" alt="banner" />
-            </Banner>
-            <ContentMain>
-                <Container>
-                    {content.map((item, index) =>
-                        <ItemIntroTemplate {...item} key={index} />
-                    )}
-                </Container>
-            </ContentMain>
-            <FooterNew />
-        </div>
+        <TemplatePage
+            imgBanner="https://cdn-global-website.superhi-cdn.com/website/image/0688568204954d4592b3703cc4e50daf-1920-490.jpg"
+        >
+            <Container>
+                {content.map((item, index) =>
+                    <ItemIntroTemplate {...item} key={index} />
+                )}
+            </Container>
+        </TemplatePage>
     )
 }

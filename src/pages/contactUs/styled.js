@@ -2,20 +2,6 @@ import {styled} from 'styled-components';
 import BgContact from '../../asset/images/bg-contact.png'
 import BgTemplateRadius from '../../asset/images/bg-block-radius.png'
 
-const Banner = styled.section`
-    margin-top: 123px;
-    img {
-        max-width: 100%;
-    }
-`;
-
-const ContentMain = styled.section`
-    @media (min-width: 992px) {
-        margin: 100px 0;
-    }
-    overflow: hidden;
-`;
-
 const BlockImage = styled.div`
     position: relative;
 `;
@@ -91,12 +77,10 @@ const TemplateRadius = styled.div`
 `;
 
 export {
-    Banner,
     BlockImage,
     ImgTopic,
     ImgCircle,
     Description,
-    ContentMain,
     ItemIntro,
     BlockSocial,
     TemplateRadius,

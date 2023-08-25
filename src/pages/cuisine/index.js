@@ -4,7 +4,6 @@ import {useParams} from 'react-router-dom';
 import { DataMenu } from '../../components/TopNav/menuJson'
 import TitleParagraph from '../../components/TitleParagraph';
 import { Container, Row, Col } from 'react-bootstrap';
-import TopNav from '../../components/TopNav';
 import {
     WrapCuisine,
     WrapItemCuisine,
@@ -18,7 +17,7 @@ import {
     ItemCuisineMain,
     BtnClose,
 } from './styled'
-import FooterNew from '../../components/FooterNew';
+import TemplatePage from '../../components/TemplatePage';
 
 const ItemCuisine = (props) => {
     const [isDescriptionFull, setIsDescriptionFull] = useState(false);
@@ -55,8 +54,7 @@ export default function PageCuisine() {
     const params = useParams();
     const dataCuisine = DataMenu[params.cuisineId].submenu;
     return (
-        <>
-            <TopNav></TopNav>
+        <TemplatePage>
             <WrapCuisine>
                 <Container className='py-lg-5 py-4'>
                     <Note className='pb-4'>The picture is for reference only.</Note>
@@ -69,7 +67,6 @@ export default function PageCuisine() {
                     </Row>
                 </Container>
             </WrapCuisine>
-            <FooterNew />
-        </>
+        </TemplatePage>
     )
 }

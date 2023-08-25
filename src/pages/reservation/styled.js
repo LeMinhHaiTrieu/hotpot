@@ -1,14 +1,7 @@
 import {styled} from 'styled-components';
 import { MainColor1, ThemeColor } from '../../constant';
 
-const Banner = styled.section`
-    margin-top: 123px;
-    img {
-        max-width: 100%;
-    }
-`;
-
-const ContentMain = styled.section`
+const Wrapper = styled.section`
     margin-top: -10%;
     max-width: 960px;
     border-radius: 4px;
@@ -112,8 +105,7 @@ const ItemPerson = styled.div`
 `;
 
 export {
-    Banner,
-    ContentMain,
+    Wrapper,
     BlockStarts,
     Address,
     BlockPerson,

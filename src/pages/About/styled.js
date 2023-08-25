@@ -1,19 +1,5 @@
 import {styled} from 'styled-components';
 
-const Banner = styled.section`
-    margin-top: 123px;
-    img {
-        max-width: 100%;
-    }
-`;
-
-const ContentMain = styled.section`
-    @media (min-width: 992px) {
-        margin: 100px 0;
-    }
-    overflow: hidden;
-`;
-
 const BlockImage = styled.div`
     position: relative;
 `;
@@ -62,11 +48,9 @@ const Description = styled.p`
 `;
 
 export {
-    Banner,
     BlockImage,
     ImgTopic,
     ImgCircle,
     Description,
-    ContentMain,
     ItemIntro,
 }

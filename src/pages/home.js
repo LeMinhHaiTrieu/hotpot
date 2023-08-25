@@ -100,7 +100,7 @@ function App() {
             <SwiperSlide><Slide3 activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide className='footer-slide'><FooterNew /></SwiperSlide>
           </Swiper>
-          {activeSlide != 3 &&
+          {activeSlide == 3 &&
             <CircleDownSlide onClick={nexToSlide}>
               <img src={ArrowDown} alt="" />
             </CircleDownSlide>
