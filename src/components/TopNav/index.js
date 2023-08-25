@@ -20,7 +20,9 @@ export default function TopNav() {
             <Container>
                 <ContentTopNav>
                     <WrapLogo>
-                        <img src={logo} alt="logo.svg" />
+                        <Link to="/">
+                            <img src={logo} alt="logo.svg" />
+                        </Link>
                     </WrapLogo>
 
                     <UlMenu>

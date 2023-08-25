@@ -4,15 +4,16 @@ import { styled, keyframes } from 'styled-components';
 import { Mousewheel, Pagination } from 'swiper/modules';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Slide1 from '../components/Slide1';
-import Slide3 from '../components/Slide3';
-import TopNav from '../components/TopNav';
-import MTopNav from '../components/MTopNav';
-import MSlide2 from '../components/MSlide2';
-import MSlide3 from '../components/MSlide3';
-import FooterNew from '../components/FooterNew';
-import ArrowDown from '../asset/images/arrow-down.png';
-import Slide2New from '../components/Slide2New';
+import Slide3 from '../../components/Slide3';
+import TopNav from '../../components/TopNav';
+import MTopNav from '../../components/MTopNav';
+import MSlide2 from '../../components/MSlide2';
+import MSlide3 from '../../components/MSlide3';
+import FooterNew from '../../components/FooterNew';
+import Slide1New from '../../components/Slide1New';
+import Slide2New from '../../components/Slide2New';
+import ArrowDown from '../../asset/images/arrow-down.png';
+import { WrapHome } from './styled';
 
 const CircleDownAnimation = keyframes`
   0% {
@@ -41,14 +42,14 @@ const CircleDownSlide = styled.div`
 `
 
 function App() {
-  const [state, toggleState] = useState(true);
   const [activeSlide, setActiveSlide] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [swiper, setSwiper] = useState(null);
 
   const handleOnSlideChange = (e) => {
-    setActiveSlide(e.activeIndex)
-    toggleState(!state)
+    setTimeout(() => {
+      setActiveSlide(e.activeIndex)
+    }, 1500)
   }
 
   const nexToSlide = () => {
@@ -72,7 +73,7 @@ function App() {
   }, [])
 
   return (
-    <div id="Home">
+    <WrapHome id="Home">
       {!isMobile &&
         <>
           <TopNav />
@@ -92,7 +93,7 @@ function App() {
               setSwiper(s);
             }}
           >
-            <SwiperSlide><Slide1 activeSlide={activeSlide} /></SwiperSlide>
+            <SwiperSlide><Slide1New activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide><Slide2New activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide><Slide3 activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide className='footer-slide'><FooterNew /></SwiperSlide>
@@ -112,7 +113,7 @@ function App() {
           <FooterNew />
         </>
       }
-    </div>
+    </WrapHome>
   );
 }
 
