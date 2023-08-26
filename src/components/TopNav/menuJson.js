@@ -1,6 +1,7 @@
 const DataMenu = { 
     "sub-base": {
         title: "Sub Base",
+        icon: "https://www.haidilao-inc.com/us/static/img/icon-pot.9e718fd0.svg",
         submenu: [
             {
                 title: "Beef `Pho` Broth",
@@ -26,6 +27,7 @@ const DataMenu = {
     },
     'bbq': {
         title: "BBQ",
+        icon: "https://www.haidilao-inc.com/us/static/img/icon-dish.02a1bbcc.svg",
         submenu: [
             {
                 title: "Beef Bulgogi",
@@ -75,6 +77,7 @@ const DataMenu = {
     },
     'side-dish': {
         title: "Side Dish",
+        icon: "https://www.haidilao-inc.com/us/static/img/icon-sauce.3dc216d0.svg",
         description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
         submenu: [
             {
@@ -92,6 +95,7 @@ const DataMenu = {
         ]
     },
     'meat': {
+        icon: "https://www.haidilao-inc.com/us/static/img/icon-snack.47d5e2a6.svg",
         title: "Meat",
         description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
         submenu: [
@@ -122,6 +126,7 @@ const DataMenu = {
         ]
     },
     'seafood': {
+        icon: "https://www.haidilao-inc.com/us/static/img/icon-drinks.fd88f2f0.svg",
         title: "Seafood",
         description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
         submenu: [
@@ -148,6 +153,7 @@ const DataMenu = {
         ]
     },
     'meatball': {
+        icon: "https://www.haidilao-inc.com/us/static/img/icon-pot.9e718fd0.svg",
         title: "Meatball",
         description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
         submenu: [
@@ -174,6 +180,7 @@ const DataMenu = {
         ]
     },
     'tofu': {
+        icon: "https://www.haidilao-inc.com/us/static/img/icon-dish.02a1bbcc.svg",
         title: "Tofu",
         description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
         submenu: [
@@ -192,6 +199,7 @@ const DataMenu = {
         ]
     },
     'vegetable': {
+        icon: "https://www.haidilao-inc.com/us/static/img/icon-sauce.3dc216d0.svg",
         title: "Vegetable",
         description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
         submenu: [
@@ -246,6 +254,7 @@ const DataMenu = {
         ]
     },
     'noodle': {
+        icon: "https://www.haidilao-inc.com/us/static/img/icon-drinks.fd88f2f0.svg",
         title: "Noodle",
         description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
         submenu: [
@@ -280,6 +289,7 @@ const DataMenu = {
         ]
     },
     'delicacy': {
+        icon: "	https://www.haidilao-inc.com/us/static/img/icon-pot.9e718fd0.svg",
         title: "Delicacy",
         description: "Made with selected butter, green and red peppercorns, and a variety of chili peppers. The oil at the bottom of the pot is red and bright, and the soup has a mellow taste. The more you cook, the more fragrant it becomes. Pair it with a garlic sesame oil dish, it's authentic to eat like this!",
         submenu: [
