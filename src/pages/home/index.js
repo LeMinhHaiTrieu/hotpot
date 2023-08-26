@@ -7,6 +7,7 @@ import "aos/dist/aos.css"
 import Slide3 from '../../components/Slide3'
 import TopNav from '../../components/TopNav'
 import MTopNav from '../../components/MTopNav'
+import MSlide1New from '../../components/MSlide1New'
 import MSlide2 from '../../components/MSlide2'
 import MSlide3 from '../../components/MSlide3'
 import FooterNew from '../../components/FooterNew'
@@ -147,7 +148,7 @@ function App() {
       {isMobile &&
         <>
           <MTopNav />
-          <Slide1New activeSlide={activeSlide} />
+          <MSlide1New />
           <MSlide2 />
           <MSlide3 />
           <FooterNew />
