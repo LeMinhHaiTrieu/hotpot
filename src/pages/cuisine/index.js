@@ -18,7 +18,7 @@ import {
     BtnClose,
 } from './styled'
 import TemplatePage from '../../components/TemplatePage';
-import CuisineFastlink from '../../components/CuisineFastLink'
+import FastLinkCuisine from '../../components/FastLinkCuisine'
 
 const ItemCuisine = (props) => {
     const [isDescriptionFull, setIsDescriptionFull] = useState(false);
@@ -68,7 +68,7 @@ export default function PageCuisine() {
                     </Row>
                 </Container>
             </WrapCuisine>
-            <CuisineFastlink />
+            <FastLinkCuisine />
         </TemplatePage>
     )
 }

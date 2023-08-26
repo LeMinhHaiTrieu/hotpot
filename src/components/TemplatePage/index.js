@@ -4,6 +4,7 @@ import TopNav from '../../components/TopNav'
 import { Banner, ContentMain } from './styled'
 import FooterNew from '../../components/FooterNew'
 import MTopNav from '../../components/MTopNav';
+import FastLinkAllPage from '../FastLinkAllPage';
 
 export default function TemplatePage(props) {
     const [isMobile, setIsMobile] = useState(false);
@@ -33,6 +34,7 @@ export default function TemplatePage(props) {
                 </Container>
             </ContentMain>
             <FooterNew />
+            <FastLinkAllPage />
         </div>
     )
 }

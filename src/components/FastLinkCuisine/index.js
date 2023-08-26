@@ -12,7 +12,7 @@ import { DataMenu } from '../../components/TopNav/menuJson'
 import IconDoubleArrowRight from '../../asset/svg/icon_double_arrow_right.svg'
 import { useState } from 'react'
 
-function CuisineFastlink() {
+function FastLinkCuisine() {
     const params = useParams();
     const cuisineId = params.cuisineId
     const Keys = Object.keys(DataMenu)
@@ -47,4 +47,4 @@ function CuisineFastlink() {
     )
 }
 
-export default CuisineFastlink;
+export default FastLinkCuisine;
