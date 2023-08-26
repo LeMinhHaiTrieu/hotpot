@@ -13,12 +13,12 @@ import FooterNew from '../../components/FooterNew'
 import Slide1New from '../../components/Slide1New'
 import Slide2New from '../../components/Slide2New'
 import FastLinkAllPage from '../../components/FastLinkAllPage'
-
+import { useViewport } from '../../hooks'
 import { WrapHome } from './styled';
 
 function App() {
+  const isMobile = useViewport();
   const [activeSlide, setActiveSlide] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
   const [swiper, setSwiper] = useState(null);
 
   const handleOnSlideChange = (e) => {
@@ -36,14 +36,6 @@ function App() {
     });
     AOS.refresh();
   }, []);
-
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(window.innerWidth <= 1024)
-    }
-    handleResize();
-    window.addEventListener('resize', handleResize)
-  }, [])
 
   return (
     <WrapHome id="Home">

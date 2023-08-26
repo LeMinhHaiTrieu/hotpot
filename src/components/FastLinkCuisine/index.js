@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { useViewport } from '../../hooks'
 import { Row, Col } from 'react-bootstrap'
 import {useParams, Link} from 'react-router-dom'
 import {
@@ -10,14 +12,14 @@ import {
 } from './styled'
 import { DataMenu } from '../../components/TopNav/menuJson'
 import IconDoubleArrowRight from '../../asset/svg/icon_double_arrow_right.svg'
-import { useState } from 'react'
 
 function FastLinkCuisine() {
+    const isMobile = useViewport();
     const params = useParams();
     const cuisineId = params.cuisineId
     const Keys = Object.keys(DataMenu)
     const ColArrayMenu = [[...Keys.slice(0, Keys.length/2)], [...Keys.slice(Keys.length/2)]]
-    const [expand, setExpand] = useState(true);
+    const [expand, setExpand] = useState(!isMobile);
     return (
         <WrapperCuisineFastlink className={!expand && "hide"}>
             <ItemsCenter>

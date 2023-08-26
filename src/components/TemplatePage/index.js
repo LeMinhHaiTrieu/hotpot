@@ -5,18 +5,11 @@ import { Banner, ContentMain } from './styled'
 import FooterNew from '../../components/FooterNew'
 import MTopNav from '../../components/MTopNav';
 import FastLinkAllPage from '../FastLinkAllPage';
+import { useViewport } from '../../hooks'
 
 export default function TemplatePage(props) {
-    const [isMobile, setIsMobile] = useState(false);
+    const isMobile = useViewport();
     const {imgBanner, children} = props
-
-    useEffect(() => {
-        function handleResize() {
-          setIsMobile(window.innerWidth <= 1024)
-        }
-        handleResize();
-        window.addEventListener('resize', handleResize)
-    }, [])
 
     return (
         <div className='main'>
