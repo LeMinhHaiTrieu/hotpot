@@ -13,6 +13,7 @@ export default function App() {
   return (
     <Router>
       <div>
+        <Home />
         <Routes>
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
