@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+    <title>-mockplus-</title>
+    <defs>
+        <filter x="-47.1%" y="-47.1%" width="194.1%" height="194.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.170536495 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="北美官网适配" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="h5/锅底/牛油麻辣" transform="translate(-67.000000, -388.000000)" fill="#E44450" fill-rule="nonzero">
+            <g id="icon/展开菜单" transform="translate(70.000000, 391.000000)" filter="url(#filter-1)">
+                <g id="-mockplus-" transform="translate(9.000000, 9.000000)">
+                    <g id="icon/展开" transform="translate(1.500000, 1.000000)">
+                        <g transform="translate(6.500000, 7.000000) scale(-1, 1) translate(-6.500000, -7.000000) " id="路径">
+                            <path d="M3.98661865,9.64556138 L4.12741865,9.57036138 L9.56741865,6.05676138 C9.9988624,5.79270362 10.1513895,5.23917137 9.91609418,4.79139207 C9.68079883,4.34361276 9.13841877,4.15523458 8.67621865,4.36076138 L8.52261865,4.44236138 L3.60581865,7.62156138 L-1.31098135,4.44236138 C-1.70093603,4.19034138 -2.21527412,4.2529506 -2.53338135,4.59116138 L-2.64058135,4.72876138 C-2.89236523,5.1182181 -2.82974331,5.63198717 -2.49178135,5.94956138 L-2.35418135,6.05676138 L3.08421865,9.56876138 C3.35621865,9.74476138 3.69541865,9.76876138 3.98661865,9.64396138 L3.98661865,9.64556138 Z" transform="translate(3.616000, 7.000000) rotate(-90.000000) translate(-3.616000, -7.000000) "/>
+                            <path d="M9.75301865,9.64396138 L9.89381865,9.56876138 L15.3338187,6.05516138 C15.7652624,5.79110362 15.9177895,5.23757137 15.6824942,4.78979207 C15.4471988,4.34201276 14.9048188,4.15363458 14.4426187,4.35916138 L14.2890187,4.44076138 L9.37221865,7.61996138 L4.45541865,4.44236138 C4.06546397,4.19034138 3.55112588,4.2529506 3.23301865,4.59116138 L3.12581865,4.72876138 C2.87403477,5.1182181 2.93665669,5.63198717 3.27461865,5.94956138 L3.41221865,6.05676138 L8.85061865,9.57036138 C9.12261865,9.74636138 9.46181865,9.77036138 9.75301865,9.64556138 L9.75301865,9.64396138 Z" transform="translate(9.382400, 7.000000) rotate(-90.000000) translate(-9.382400, -7.000000) "/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
