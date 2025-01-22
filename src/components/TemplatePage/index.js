@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { Container } from 'react-bootstrap';
 import TopNav from '../../components/TopNav'
 import { Banner, ContentMain } from './styled'

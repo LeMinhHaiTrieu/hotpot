@@ -36,8 +36,8 @@ const ContentLink = ({label, icon, iconHover, isReservation }) => {
                 <img src={iconHover} alt="" />
             </LabelFastLink>
             <IconFastLink className={`${isReservation && "ring"} icon`}>
-                {!isReservation && <img src={icon} />}
-                {isReservation && <img src={IconOrderOnlineRed} />}
+                {!isReservation && <img src={icon} alt="" />}
+                {isReservation && <img src={IconOrderOnlineRed} alt="" />}
             </IconFastLink>
         </>
     )
@@ -49,7 +49,7 @@ export default function FastLinkAllPage() {
             {dataFastLink.map(item =>
             <WrapFastItem key={item.label}>
                 {item.isTargetBlank &&
-                <a className='d-flex' target="_blank" href={item.link}>
+                <a className='d-flex' target="_blank" href={item.link} rel="noreferrer">
                     <ContentLink {...item} />
                 </a>
                 }

@@ -29,7 +29,7 @@ function FastLinkCuisine() {
                             {keys.map(key =>
                                 <Link to={`/cuisine/${key}`}>
                                     <ItemFastLink>
-                                        <Avatar key={key} className={key == cuisineId && 'active'}>
+                                        <Avatar key={key} className={key === cuisineId && 'active'}>
                                             <img src={DataMenu[key].icon} alt="" />
                                         </Avatar>
                                         <NameCuisine>

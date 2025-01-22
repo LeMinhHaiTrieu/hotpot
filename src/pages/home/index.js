@@ -19,15 +19,9 @@ import { WrapHome } from './styled';
 function App() {
   const isMobile = useViewport();
   const [activeSlide, setActiveSlide] = useState(0);
-  const [swiper, setSwiper] = useState(null);
-
   const handleOnSlideChange = (e) => {
     setActiveSlide(e.activeIndex)
   }
-
-  const nexToSlide = () => {
-    swiper.slideNext();
-  };
 
   useEffect(() => {
     AOS.init({
@@ -54,20 +48,12 @@ function App() {
             modules={[Mousewheel, Pagination]}
             className="mySwiper"
             onSlideChange={handleOnSlideChange}
-            onSwiper={(s) => {
-              setSwiper(s);
-            }}
           >
             <SwiperSlide><Slide1New activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide><Slide2New activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide><Slide3 activeSlide={activeSlide} /></SwiperSlide>
             <SwiperSlide className='footer-slide'><FooterNew /></SwiperSlide>
           </Swiper>
-          {/* {activeSlide !== 3 &&
-            <CircleDownSlide onClick={nexToSlide}>
-              <img src={ArrowDown} alt="" />
-            </CircleDownSlide>
-          } */}
         </>
       }
       {isMobile &&

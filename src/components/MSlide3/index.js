@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import Image1 from '../../asset/images/hadilao1.png'
 import Image2 from '../../asset/images/hadilao2.png'
 import Image3 from '../../asset/images/hadilao3.png'

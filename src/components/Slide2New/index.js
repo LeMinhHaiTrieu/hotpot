@@ -4,7 +4,6 @@ import {
     VideoContent,
     WrapperMessVideo,
     CircleLine,
-    CircleFat,
     WrapVideoFullScreen,
     CloseVideoFullScreen,
     ContinuePlayVideo,

@@ -38,13 +38,13 @@ export default function PageAbout() {
             <Container>
                 {content.map((item, index) =>
                     <ItemIntro key={index}>
-                        <Row className={!index%2 == 0 && 'flex-row-reverse'}>
+                        <Row className={!index%2 === 0 && 'flex-row-reverse'}>
                             <Col lg="6">
                                 <BlockImage>
                                     <ImgTopic>
-                                        <img src={item.image} alt="about" className={index%2 == 0 ? "radiusLeft" : "radiusRight"} />
+                                        <img src={item.image} alt="about" className={index%2 === 0 ? "radiusLeft" : "radiusRight"} />
                                     </ImgTopic>
-                                    <ImgCircle className={index%2 == 0 ? "positionLeft" : "positionRight"}>
+                                    <ImgCircle className={index%2 === 0 ? "positionLeft" : "positionRight"}>
                                         <img src={CircleOpacity} alt="circle" />
                                     </ImgCircle>
                                 </BlockImage>

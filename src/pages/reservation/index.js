@@ -22,8 +22,6 @@ export default function PageReservation() {
     const {
         register,
         handleSubmit,
-        getValues,
-        watch,
         formState: { errors }
     } = useForm({
         // mode: "onTouched",
@@ -72,6 +70,7 @@ export default function PageReservation() {
                             </BlockStarts>
                             <Address className='my-4'>2710 Alton Pkwy Ste 215 Irvine, CA 92606</Address>
                             <iframe
+                                title='map'
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.815673543521!2d-117.83675678856491!3d33.687836736772525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcde9cfd1461df%3A0xd85eda25ade458e9!2s2710%20Alton%20Pkwy%20%23215%2C%20Irvine%2C%20CA%2092606%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1691859876149!5m2!1svi!2s"
                                 width="100%"
                                 height="200"

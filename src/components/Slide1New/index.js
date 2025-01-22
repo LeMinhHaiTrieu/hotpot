@@ -45,7 +45,7 @@ function Slide1() {
     const [activeSlide, setActiveSlide] = useState(0);
 
     const handleOnSlideChange = (e) => {
-        setActiveSlide(e.activeIndex)
+        setActiveSlide(Number(e.activeIndex))
     }
     return (
         <WrapSlide>
@@ -63,13 +63,13 @@ function Slide1() {
                 className="bannerSwiper"
             >
                 <SwiperSlide>
-                    <img src={bannerBackground1} />
-                    {activeSlide == 0 &&
+                    <img src={bannerBackground1} alt="" />
+                    {activeSlide === 0 &&
                         <WrapImgCenter1 className="animate__animated animate__backInDown">
                             <img src={bannerImg1} alt="" />
                         </WrapImgCenter1>
                     }
-                    {activeSlide == 0 &&
+                    {activeSlide === 0 &&
                         <WrapLabel className="animate__animated animate__backInUp">
                             <img src={bannerText1} alt="" />
                         </WrapLabel>
@@ -77,13 +77,13 @@ function Slide1() {
                     <Circle />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={bannerBackground2} />
-                    {activeSlide == 1 &&
+                    <img src={bannerBackground2} alt="" />
+                    {activeSlide === 1 &&
                         <WrapImgCenter2 className="animate__animated animate__fadeInBottomLeft">
                             <img src={bannerImg2} alt="" />
                         </WrapImgCenter2>
                     }
-                    {activeSlide == 1 &&
+                    {activeSlide === 1 &&
                         <WrapLabel className='animate__animated animate__fadeInTopRight'>
                             <img src={bannerText2} alt="" />
                         </WrapLabel>
@@ -91,13 +91,13 @@ function Slide1() {
                     <Circle />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={bannerBackground3} />
-                    {activeSlide == 2 && 
+                    <img src={bannerBackground3} alt="" />
+                    {activeSlide === 2 && 
                         <WrapImgCenter3 className='animate__animated animate__zoomInDown'>
                             <img src={bannerImg3} alt="" />
                         </WrapImgCenter3>
                     }
-                    {activeSlide == 2 && 
+                    {activeSlide === 2 && 
                         <WrapLabel className='animate__animated animate__zoomInDown'>
                             <img src={bannerText3} alt="" />
                         </WrapLabel>
