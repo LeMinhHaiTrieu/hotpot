@@ -8,7 +8,7 @@ const Wrapper = styled.section`
     box-shadow: 0 3px 6px rgba(0,0,0,.1);
     background-color: #fff;
     border-color: #eeeeef;
-    margin: -20% auto 33px;
+    margin: 3% auto 33px;
     z-index: 100;
     position: relative;
     .border-right {

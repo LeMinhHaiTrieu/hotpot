@@ -8,7 +8,7 @@ const ContentMain = styled.section`
 `;
 
 const Banner = styled.section`
-    margin-top: 123px;
+    margin-top: 104px;
     img {
         max-width: 100%;
     }

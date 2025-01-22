@@ -7,8 +7,9 @@ import {
     ImgCircle,
 } from './styled'
 import TitleParagraph from '../../components/TitleParagraph';
-import CircleOpacity from '../../asset/images/circle-opacity.png'
-import TemplatePage from '../../components/TemplatePage'
+import TemplatePage from '../../components/TemplatePage';
+import CircleOpacity from '../../asset/images/circle-opacity.png';
+import BannerAbout from '../../asset/images/BannerPage/banner-about.jpg';
 
 const content = [
     {
@@ -31,39 +32,29 @@ const content = [
     },
 ]
 
-
-const ItemIntroTemplate = (props) => {
-    const {image, title, description, imgLeft, key} = props;
-    return (
-        <ItemIntro key={key}>
-            <Row className={!imgLeft && 'flex-row-reverse'}>
-                <Col lg="6">
-                    <BlockImage>
-                        <ImgTopic>
-                            <img src={image} alt="about" className={imgLeft ? "radiusLeft" : "radiusRight"} />
-                        </ImgTopic>
-                        <ImgCircle className={imgLeft ? "positionLeft" : "positionRight"}>
-                            <img src={CircleOpacity} alt="circle" />
-                        </ImgCircle>
-                    </BlockImage>
-                </Col>
-                <Col lg="6" className='mt-4'>
-                    <TitleParagraph>{title}</TitleParagraph>
-                    <Description>{description}</Description>
-                </Col>
-            </Row>
-        </ItemIntro>
-    )
-};
-
 export default function PageAbout() {
     return (
-        <TemplatePage
-            imgBanner="https://cdn-global-website.superhi-cdn.com/website/image/0688568204954d4592b3703cc4e50daf-1920-490.jpg"
-        >
+        <TemplatePage imgBanner={BannerAbout}>
             <Container>
                 {content.map((item, index) =>
-                    <ItemIntroTemplate {...item} key={index} />
+                    <ItemIntro key={index}>
+                        <Row className={!index%2 == 0 && 'flex-row-reverse'}>
+                            <Col lg="6">
+                                <BlockImage>
+                                    <ImgTopic>
+                                        <img src={item.image} alt="about" className={index%2 == 0 ? "radiusLeft" : "radiusRight"} />
+                                    </ImgTopic>
+                                    <ImgCircle className={index%2 == 0 ? "positionLeft" : "positionRight"}>
+                                        <img src={CircleOpacity} alt="circle" />
+                                    </ImgCircle>
+                                </BlockImage>
+                            </Col>
+                            <Col lg="6" className='mt-4'>
+                                <TitleParagraph>{item.title}</TitleParagraph>
+                                <Description>{item.description}</Description>
+                            </Col>
+                        </Row>
+                    </ItemIntro>
                 )}
             </Container>
         </TemplatePage>

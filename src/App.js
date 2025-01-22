@@ -11,9 +11,7 @@ import Reservation from './pages/reservation'
 
 export default function App() {
   return (
-    <Router>
-      <div>
-        <Home />
+   
         <Routes>
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
@@ -24,7 +22,6 @@ export default function App() {
           </Route>
           <Route path="/" element={<Home />} />
         </Routes>
-      </div>
-    </Router>
+   
   );
 }
